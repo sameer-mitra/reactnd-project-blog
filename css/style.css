@@ -27,6 +27,8 @@
     .header{
       /* row start/column start/ row end/ column end */
       grid-area:hd;
+      background-image: url("../images/auckland.jpg");
+      background-size: contain;
     }
     .footer{
       grid-area: ft;  
