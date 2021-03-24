@@ -36,17 +36,18 @@ ul {
 
 .main {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 250px 600px;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* Initially each element has its own row for small screens */
+    grid-template-columns: 300px;
+    grid-template-rows: 30px 100px 20px 300px 300px 30px;
     grid-template-areas:
-        "hd"
-        "sd"
-        "main"
-        "ft";
-    border: 2px solid yellow;
+        "header"
+        "banner"
+        "nav"
+        "post"
+        "sidebar"
+        "footer";
+    border: 2px solid red;
 }
+
 /* add css for nested grid here */
 .nestedGrid {
     display: grid;
@@ -60,21 +61,21 @@ ul {
 
 .header {
     /* row start/column start/ row end/ column end */
-    grid-area: hd;
+    grid-area: header;
     background-image: url("../images/showcase.jpg");
     background-size: cover;
 }
 
 .footer {
-    grid-area: ft;
+    grid-area: footer;
 }
 
 .sidebar {
-    grid-area: sd;
+    grid-area: sidebar;
 }
 
 .content {
-    grid-area: main;
+    grid-area: post;
 }
 
 /* Header **/
@@ -280,12 +281,14 @@ footer {
 @media(min-width:900px) {
     .main {
         display: grid;
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 250px 600px;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 30px 100px 20px 300px 30px;
         grid-template-areas:
-            "hd hd hd hd hd hd hd hd"
-            "sd sd main main main main main main"
-            "ft ft ft ft ft ft ft ft";
+            "header header"
+            "banner banner"
+            "nav nav"
+            "post sidebar"
+            "footer footer";
         border: 2px solid red;
     }
 }
