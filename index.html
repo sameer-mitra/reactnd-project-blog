@@ -12,29 +12,38 @@
     <script type="text/javascript" src="./scripts/script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="grid-container">
+        <header class="header">
             <div id="branding">
                 <h1><span class="highlight">Random Musings</span> of a Software Developer</h1>
             </div>
+        </header>
+
+        <div class="banner">
+            <div><h1>Sameer Mitra's Blog</h1></div>
         </div>
-    </header>
 
-    <section id="showcase">
-        <div class="container"><h1>Sameer Mitra's Blog</h1></div>
-    </section>
+        <nav class="nav">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="https://www.sameermitra.com">OLD Blog</a></li>
+                <li><a href="https://www.sameermitra.com/resume">Résumé</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="https://www.sameermitra.com">OLD Blog</a></li>
-            <li><a href="https://www.sameermitra.com/resume">Résumé</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+        <div class="content">
+            <img src="./images/post4.png">
+            <h2>Rapid Development</h2>
+            <h3>Book Review</h3>
+            <p>
+                I recently finished Rapid Development which I half-jokingly refer to as an encyclopedia of software development practices.
+                McConnell is probably best known for Code Complete 2. That book covers how to code well in a similarly encyclopedic manner.
+                Code Complete 2 is a lot more applicable when you first start developing. Rapid Development is more useful when you’ve been doing it for a few years. <a href="post4.html">Read More..</a>
+            </p>
+        </div>
 
-    <section id="boxes">
-        <div class="container">
+        <div class="grid-container-nested sidebar">
             <div class="box">
                 <a href="post4.html">
                     <img src="./images/post4.png">
@@ -62,12 +71,12 @@
                     <h3>Hello World!</h3>
                     <p>Motivation behind my Blog</p>
                 </a>
-            </div>            
+            </div>
         </div>
-    </section>
 
-    <footer>
-        <p>Sameer Mitra, Copyright &copy; 2021</p>
-    </footer>
+        <footer class="footer">
+            <p>Sameer Mitra, Copyright &copy; 2021</p>
+        </footer>
+    </div>
 </body>
 </html>
