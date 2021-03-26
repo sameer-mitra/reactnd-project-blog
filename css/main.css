@@ -48,12 +48,12 @@
 /* HEADER */
 .header {    
     grid-area: header;
-    background: #292f36;
-    color: #ffffff;
+    background: var(--color-header);
+    color: var(--color-forecolor);
     padding-top: 30px;
     padding-left: 30px;
     min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: var(--color-highlight) 3px solid;
 }
 
 .header li {
@@ -77,7 +77,7 @@
     background-size: cover;
     text-align: center;
     background-position: center center;
-    color: #ffffff;
+    color: var(--color-forecolor);
 }
 .banner h1 {
     margin-top: 70px;
@@ -103,25 +103,25 @@
     float: right;
     width: 100%;
     height: 60px;
-    background: #292f36;
+    background: var(--color-header);
     /*position: fixed;*/
     z-index: 10;
 }
 
 .nav a {
-    color: #ffffff;
+    color: var(--color-forecolor);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
 
 .header .highlight, .nav .current a {
-    color: #e8491d;
+    color: var(--color-highlight);
     font-weight: bold;
 }
 
 .nav a:hover {
-    color: #cccccc;
+    color: var(--color-nav-hover);
     font-weight: bold;
 }
 
@@ -151,7 +151,7 @@
 
 .nav ul li a {
     text-decoration: none;
-    color: #a9abae;
+    color: var(--color-nav-link);
 }
 
 .fixed-header {
@@ -174,8 +174,8 @@
     padding: 10px;
     float: left;
     text-align: center;
-    background-color: #ffffff;
-    border: 1px solid #000000;
+    background-color: var(--color-forecolor);
+    border: 1px solid var(--color-border);
     font-weight: normal;
     text-decoration: none;
     height: 300px;
@@ -202,8 +202,8 @@
 .content {
     grid-area: post;
     padding: 20px 20px 20px 20px;
-    background-color: #ffffff;
-    border: 1px solid #000000;
+    background-color: var(--color-forecolor);
+    border: 1px solid var(--color-border);
     margin: 20px 10px 0px 10px;
 }
 
@@ -217,8 +217,8 @@
     grid-area: footer;
     padding: 20px;
     margin-top: 20px;
-    color: #ffffff;
-    background-color: #e8491d;
+    color: var(--color-forecolor);
+    background-color: var(--color-footer);
     text-align: center;
 }
 
@@ -227,8 +227,7 @@ body {
     font: 15px/1.5 Arial, Helvetica,sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #ebebeb;
-    /*background-color: #f4f4f4;*/
+    background-color: var(--color-body);
 }
 
 ul {
