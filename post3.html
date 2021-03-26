@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="blog">
+    <meta name="author" content="Sameer Mitra">
+    <title>Sameer Mitra | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="grid-container-post">
+        <header class="header">
+            <div id="branding">
+                <h1><span class="highlight">Random Musings</span> of a Software Developer</h1>
+            </div>
+        </header>
+
+        <div class="banner">
+            <div>
+                <h1>Sameer Mitra's Blog</h1>
+                <h2>Code Complete 2</h2>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.sameermitra.com">OLD Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <img src="./images/post3.png">
+            <h1>Code Complete 2</h1>
+            <h2>Book Review</h2>
+            <p>
+                I recently embarked on a journey to read (or re-read) all the great classic books in the software literature. This is the first
+                in a series I will do on this site.
+            </p>
+            <p>
+                Code Complete is a massive work, so this summary is, necessarily, very high level. It is not a book that one can absorb completely
+                in one reading, but one can absorb its high level themes (summarized nicely in the second to last chapter).
+            </p>
+
+            <h3>Conquer Complexity</h3>
+            <p>
+                High quality code manages complexity. No one can think of all of the levels of abstraction needed to fully understand a program at
+                once; just admit it and try to make your code less complex. Complexity can be managed at every level of the development process from
+                having a well thought out high level design to choosing good variable names.
+            </p>
+
+            <h3>Pick Your Process</h3>
+            <p>
+                Having a process is important. It does not matter exactly what the process is; in fact, the process should be tailored to the problem
+                at hand. The purpose of a process is to allow for coordination between people. When a project is small (1, maybe 2 people), then it is
+                the talent of the individual that matters most. When a project is large, it is managing communication that matters most.
+            </p>
+
+            <h3>Write Programs for People First, Computers Second</h3>
+            <p>
+                Computers do not care about programs being readable, but people do, and people are going to read your programs many time. Readable
+                code has a plethora of advantages including lower error rates, being easier to debug and modify, and having shorter development time.
+                Make code readable first, and only optimize when you can make measurable improvements to measurable performance bottlenecks.
+            </p>
+
+            <h3>Program into Your Language, Not in It</h3>
+            <p>
+                Do not limit your programming by the features your language supports. Write libraries that will support the programming features
+                you want for the problem at hand. One example McConnell gives writing an assertion library if your language does not support assertions.
+            </p>
+
+            <h3>Focus Your Attention with the Help of Conventions</h3>
+            <p>
+                Conventions, like processes, do not matter in their particulars. Some conventions are better than others, but for the most part,
+                conventions tend to be arbitrary. However, having conventions makes code easier to read and modify because a convention can
+                communicate a lot without using much space or requiring much thinking.
+            </p>
+
+            <h3>Program in Terms of the Problem Domain</h3>
+            <p>
+                This is a particular method of managing complexity. Higher level code should be supported by lower level code that hides implementation
+                specific details from the higher level code. When done well, this makes the code easier to read and easier to modify. Even at the
+                construction level, this can be done by choosing good class names and abstractions, factoring code into methods to maintain a common
+                level of abstraction, and choosing good variable names.
+            </p>
+
+            <h3>Watch for Falling Rocks</h3>
+            <p>
+                Look out for warning signs, such as classes with an abnormally high number of defects. These warning signs do not necessarily mean that
+                something is wrong with that part of the program, but they are a good indicator that you should be a little bit suspicious. These
+                warning signs could show up after construction (error rate) or during construction (compiler warning, indications from your self or
+                other that your program is hard to understand).
+            </p>
+
+            <h3>Iterate, Repeatedly, Again and Again</h3>
+            <p>
+                In addition to being my favorite section heading in the book, this principle emphasizes that iteration is appropriate at all points
+                of the software development process. Requirements are rarely fixed in stone, bugs are always present, and developers can always find
+                a better way to rewrite code. Iteration gives all of these improvements a chance to actually make it into the product under development.
+            </p>
+
+            <h3>Thou Shalt Rend Software and Religion Asunder</h3>
+            <p>
+                No one convention, process, or tool set is the be all and end all of software development. Developers should be wary of absolutes and
+                try to avoid blind faith in the processes they use. Solutions should be adapted to the problem at hand, not vice versa. The key to
+                keeping an open mind and becoming effective and flexible is experimentation. Be willing to try new things, measure the effectiveness
+                of those experiments, and be willing to change based on the results.
+            </p>
+
+            <h3>Laying the Foundation</h3>
+            <p>
+                This section discusses the general process of software development and the role of construction (a.k.a. programming) in that process.
+                Construction is important, according to McConnell, because it is the only part of the software development process that absolutely must
+                happen to produce a working software project. Construction is also an area that, traditionally, has not has as much attention to it as
+                other areas (such as high level design or testing). However, McConnell stresses that all parts of the development process are important
+                in creating a successful project and gives pointers throughout the text to resources that discuss other parts of the software development
+                process in more depth. He notes that pre-construction planning is particularly important since no amount of good construction and through
+                testing can save a bad design.
+            </p>
+
+            <h3>Creating High-Quality Code</h3>
+            <p>
+                This section introduces a point emphasized again and again throughout the book. Software's "Primary Technical Imperative" is managing
+                complexity. High quality code exposes people reading it to consistent levels of abstraction separated by clear boundaries. Complexity
+                is managed by minimizing the essential complexity one has to deal with at any given time and trying to keep accidental complexity from
+                spreading throughout the code base. High quality classes and routines provide consistent abstractions, document their assumptions, and
+                check their invariants defensively; they fail sooner rather than later. Even a simple class or routine is worthwhile if it decreases
+                the complexity of reading the code where it is used.
+            </p>
+            <p>
+                One of the most practically useful facts I got out of Code Complete was learning about the "Pseudocode Programming Process". This
+                process is a way of developing code by starting with detailed pseudocode. When constructing a program, a developer should (iteratively)
+                write pseudocode that is high level enough to be in the domain of the problem but low level enough for translation to real code to be
+                nearly mechanical. Developing pseudocode ensures that the developer understands the problem at a low enough level for implementation,
+                encourages the programmer to think about error checking before implementing the nominal path through the code, may indicate what when
+                to factor code into separate routines (and suggest names for those routines). Those parts of the high level pseudocode that the developer
+                decides to leave in provide automatic, high level commenting of code.
+            </p>
+
+            <h3>Variables</h3>
+            <p>
+                The chapters in this section discuss data initialization (do it close as close to the declaration as possible), variable scope (keep
+                it as small as possible), limiting variables to a single purpose, effective variable names (keep them specific, use a naming conventions),
+                and tips for using fundamental and more complex data types.
+            </p>
+
+            <h3>Statements</h3>
+            <p>
+                This section discusses methods for effectively organizing and using straight line code, conditionals, and loops as well as more exotic
+                control structures such as exceptions, gotos, and various table driven control structures. This section discusses how deep nesting
+                of control structures tends to make code complex. If possible, it should be avoided by restructuring the code or factoring the nested
+                code into its own routine. The more paths there are through a code fragment, the more complex it is; the number of paths a developer
+                must consider at a single time should be minimized.
+            </p>
+
+            <h3>Code Improvements</h3>
+            <p>
+                Discusses software quality, collaboration, developer testing, debugging, refactoring, and code tuning. One key point of this section 
+                is that the goals of a certain construction project should be clear. Some goals are bound to go against each other, and if developers 
+                do not know which are most important, they will do a bad job of trying to optimize all of them at once. The most obvious example of 
+                this tendency is that aggressive optimization may make code less readable and prevent beneficial refactorings. This section also 
+                points out that code reviews, testing, debugging, refactoring, and code tuning all have the potential to improve code quality, but 
+                it is when they are used thoughtfully in unison that their potential is maximized.
+            </p>
+
+            <h3>System Considerations</h3>
+            <p>
+                Discusses some higher level issues in constructing a system. As project size increases, project quality and development speed tend 
+                to go down in a faster than linear manner. This is because as the project increases, more and more overhead gets taken up by 
+                managing communication and more details tend to get lost in the cracks. It is for this reason that having a process and conventions 
+                becomes more important on large projects; the more that is automatic, the less that quality and and development time will suffer. 
+                This section also discusses how to manage programmers and essential tools that every developer should know about and use. This section 
+                also discusses several integration processes and emphasizes that which process is right depends on the project being developed.
+            </p>
+
+            <h3>Software Craftsmanship</h3>
+            <p>
+                This section talks about good practices in actually structuring code and how to write good, effective comments and code that documents 
+                itself as much as possible. This section also describes the importance of personal character in becoming an excellent developer. 
+                McConnell posits that intelligence is less important than other personal characteristics such as humility, curiosity, intellectual 
+                honesty, communication and cooperation, creativity and discipline, effective laziness, and good habits. The point emphasized throughout 
+                the discussion on personal character is that a good developer needs to be happy and willing to learn from other developers and be willing 
+                to admit when they are right and wrong if they want to earn the trust and respect of others.
+            </p>
+
+            <p><a href="index.html">Back to Home</a></p>
+        </div>
+
+        <footer class="footer">
+            <p>Sameer Mitra, Copyright &copy; 2021</p>
+        </footer>
+    </div>
+</body>
+</html>

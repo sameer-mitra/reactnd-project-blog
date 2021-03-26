@@ -2,7 +2,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 103px 300px 60px 675px 675px 100px;
+    grid-template-rows: 103px 300px 60px auto auto 100px;
     grid-template-areas:
         "header"
         "banner"
@@ -11,13 +11,24 @@
         "sidebar"
         "footer";    
 }
+.grid-container-post {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 103px 300px 60px auto 100px;
+    grid-template-areas:
+        "header"
+        "banner"
+        "nav"
+        "post"
+        "footer";
+}
 
 /* If Screen Is Wide Enough */
 @media(min-width:750px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 103px 300px 60px 675px 100px;
+        grid-template-rows: 103px 300px 60px auto 100px;
         grid-template-areas:
             "header header"
             "banner banner"
@@ -35,8 +46,7 @@
 }
 
 /* HEADER */
-.header {
-    /* row start/column start/ row end/ column end */
+.header {    
     grid-area: header;
     background: #292f36;
     color: #ffffff;
@@ -70,8 +80,13 @@
     color: #ffffff;
 }
 .banner h1 {
-    margin-top: 100px;
-    font-size: 55px;
+    margin-top: 70px;
+    font-size: 45px;
+}
+
+.banner h2 {
+    margin-top: 50px;
+    font-size: 35px;
 }
 
 .banner p {
@@ -147,15 +162,8 @@
 }
 
 
-.footer {
-    grid-area: footer;
-    padding: 20px;
-    margin-top: 20px;
-    color: #ffffff;
-    background-color: #e8491d;
-    text-align: center;
-}
 
+/* SIDEBAR BOXES */
 .sidebar {
     grid-area: sidebar;
     margin-top: 10px;
@@ -190,47 +198,41 @@
     text-decoration: inherit; /* no underline */
 }
 
+/* BLOG CONTENT */
 .content {
     grid-area: post;
     padding: 20px 20px 20px 20px;
     background-color: #ffffff;
     border: 1px solid #000000;
-    margin: 20px 20px 0px 20px;
+    margin: 20px 10px 0px 10px;
 }
 
+.content img {
+    width: 350px;    
+    background-position: center center;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* GLOBAL */
 body {
     font: 15px/1.5 Arial, Helvetica,sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
-}
-
-/* Global */
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    background-color: #ebebeb;
+    /*background-color: #f4f4f4;*/
 }
 
 ul {
-    margin: 0;
+    margin: 0px 0px 0px 20px;
     padding: 0;
-}
-
-.button_1 {
-    height: 38px;
-    background: #e8491d;
-    border: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #ffffff;
-}
-
-.dark {
-    padding: 15px;
-    background: #35424a;
-    color: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
