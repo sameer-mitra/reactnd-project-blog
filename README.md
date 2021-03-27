@@ -4,6 +4,17 @@ Project 1 of 5, Front End Web Development Nano Degree
 # Live Demo
 https://sameermitrablog.netlify.app/
 
+# Notes for the marker
+
+Used two CSS Grids:
+ - One for positioning the items in the main container, and
+ - Second one to position the blog posts in the aside/archive.
+
+Used Flexbox:
+ - In the About page.
+
+Tested with various sized screens.
+
 
 # Structure
 
