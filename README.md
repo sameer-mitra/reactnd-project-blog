@@ -6,15 +6,41 @@ https://sameermitrablog.netlify.app/
 
 # Notes for the marker
 
-Used two CSS Grids:
- - One for positioning the items in the main container, and
- - Second one to position the blog posts in the aside/archive.
+## Review Feedback (From: 27th Mar 2021):
+ 1. Add Search and Subscribe links.
+ 2. Use blockquote, italic, underlined, bold lines.
+ 3. Use more images, image captions, and buttons.
+ 4. Add author's name, title, current company/school, short bio, Avatar, Social sharing links.
+ 5. Use flex box at least twice.
 
-Used Flexbox:
- - In the About page.
+### Add Search and Subscribe links
+ - Search link just added in the nav bar.
+ - Subscribe form added in the heading and styled to reflect the rest of the site. Flexbox also used to wrap properly on smaller screens.
+
+### Use blockquote, italic, underlined, bold lines
+ - Various blog posts now change to include the above.
+ - bold used in post1
+ - blockquote, underline used in post2.
+
+### Use more images, image captions, and buttons.
+ - Added figure and figure captions and styled them.
+ - Added more images in blog posts.
+ - Button added as part of the subscribe.
+
+### Add author's name, title, current company/school, short bio, Avatar, Social sharing links
+ - Added a profile box to the right of the post on each blog post.
+ - Moved the social links from the footer to the profile box.
+
+### Use flex box at least twice
+ - Three more flex boxes added:
+ - One, as mentioned before on the header to add the subscribe link. 
+ - Second one added on blog posts to add the profile box. 
+ - Third one added inside the profile box to align the profile picture and info.
+This brings the total of flex boxes to 4.
 
 Tested with various sized screens.
 
+---
 
 # Structure
 
