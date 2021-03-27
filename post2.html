@@ -14,8 +14,24 @@
 <body>
     <div class="grid-container-post">
         <header class="header">
-            <div id="branding">
-                <h1><span class="highlight">Random Musings</span> of a Software Developer</h1>
+            <div class="flex-container-header">
+                <div class="branding">
+                    <h1><span class="highlight">Random Musings</span> of a Software Developer</h1>
+                </div>
+                <div class="subscribe">
+                    <form action="#">
+                        <input class="subscribe-input"
+                               id="txt-email"
+                               name="email"
+                               placeholder="Enter your email address"
+                               required=""
+                               title="Enter your email address to subscribe"
+                               type="email">
+                        <button class="subscribe-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
             </div>
         </header>
 
@@ -34,79 +50,98 @@
             </ul>
         </nav>
 
-        <div class="content">
-            <img src="./images/post2.png">
-            <h1>Good Software Developer?</h1>
-            <h2>What makes a good software developer</h2>
-            <p>
-                I have often thought about this - "What makes a good software developer?" The answer to me, is not that straightforward - in fact, 
-                I may appear to be contradicting on some points. I will attempt to go over them (in no particular order):
-            </p>
-            <p>
-                A good software developer has to have the ability to:
-            </p>
+        <div class="content-blog">
+            <div class="flex-container-header">
+                <div class="blog">
+                    <figure>
+                        <img src="./images/post2.png">
+                        <figcaption>Code! Baby code!</figcaption>
+                    </figure>
 
-            <h3>See the bigger picture</h3>
-            <p>
-                The ability to see the bigger picture (or as my senior colleague used to say "the ability to see the forest through the trees") as well 
-                as pay attention to detail. As a software developer, one is required to keep the overall architecture in mind, and design and program 
-                solutions that are in harmony with the bigger picture. The bigger picture may also be extended to mean that it is not necessary that 
-                all business problems or needs are met by software solutions - that sometimes changes to business processes are required to fulfill a business need.
-            </p>
-            
-            <h3>Be pragmatic</h3>
-            <p>
-                The ability to be pragmatic while preserving the integrity of the software solution. This can be a bit of a gray area - you have to be pragmatic 
-                to a certain extent to deliver what the users require, and you have to maintain the integrity of the solution to have clear boundaries and a 
-                clean architecture. In some cases, these may be a bit mutually exclusive. For example, it is of no use having a real-time application going 
-                through five web services for a simple business function - while this may maintain the purity of the solution, in practice, it is unworkable 
-                and a pain to support.
-            </p>
+                    <h1>Good Software Developer?</h1>
+                    <h2>What makes a good software developer</h2>
+                    <p>
+                        I have often thought about this
+                        <blockquote>
+                            What makes a good software developer?
+                        </blockquote>
+                        The answer to me, is not that straightforward - in fact, I may appear to be contradicting on some points. I will attempt to go over them (in no particular order):
+                    </p>
+                    <p>
+                        A <u>good software developer</u> has to have the ability to:
+                    </p>
 
-            <h3>Keep an open mind</h3>
-            <p>
-                The ability to keep an open mind, being receptive to new ideas, at the same time, not pursuing infeasible or bad ideas. Sometimes it may require 
-                you to investigate new ideas, sometimes it may require you to completely trust your team members, but the overall objectives need to be kept in 
-                mind - what we are delivering (the intention and the scope of the delivery), and the limitations or bounds in terms of time and resources.
-            </p>
+                    <h3>See the bigger picture</h3>
+                    <p>
+                        The ability to see the bigger picture (or as my senior colleague used to say "the ability to see the forest through the trees") as well
+                        as pay attention to detail. As a software developer, one is required to keep the overall architecture in mind, and design and program
+                        solutions that are in harmony with the bigger picture. The bigger picture may also be extended to mean that it is not necessary that
+                        all business problems or needs are met by software solutions - that sometimes changes to business processes are required to fulfill a business need.
+                    </p>
 
-            <h3>Have a good work ethic</h3>
-            <p>
-                The ability to work well in a team, as well as work well individually. This may seem easy.. but it can be challenging - especially working in a 
-                team made up of people from different technical backgrounds. I think that for a team to function properly, the roles and responsibilities of 
-                the team members need to be clearly defined. A healthy atmosphere needs to be created where productive discussions about different ideas are 
-                encouraged and an atmosphere where people move away from autonomous to consensual decisions. Working individually has its own challenges - you 
-                have to have a broader skill set, to name one.
-            </p>
+                    <h3>Be pragmatic</h3>
+                    <p>
+                        The ability to be pragmatic while preserving the integrity of the software solution. This can be a bit of a gray area - you have to be pragmatic
+                        to a certain extent to deliver what the users require, and you have to maintain the integrity of the solution to have clear boundaries and a
+                        clean architecture. In some cases, these may be a bit mutually exclusive. For example, it is of no use having a real-time application going
+                        through five web services for a simple business function - while this may maintain the purity of the solution, in practice, it is unworkable
+                        and a pain to support.
+                    </p>
 
-            <h3>Support standards and processes</h3>
-            <p>
-                The ability to contribute to, adhere to, and support processes/standards, and question them when needed. Processes and standards are put in place 
-                to make our lives easier. When a process/standard hinders software development rather than aid it, it needs to be questioned/improved/rectified.
-            </p>
+                    <h3>Keep an open mind</h3>
+                    <p>
+                        The ability to keep an open mind, being receptive to new ideas, at the same time, not pursuing infeasible or bad ideas. Sometimes it may require
+                        you to investigate new ideas, sometimes it may require you to completely trust your team members, but the overall objectives need to be kept in
+                        mind - what we are delivering (the intention and the scope of the delivery), and the limitations or bounds in terms of time and resources.
+                    </p>
 
-            <h3>Be passionate</h3>
-            <p>
-                Finally, a good software developer has a passion for the IT industry. It is quite essential for the software developer to be actively involved 
-                in new technologies, take an interest in current trends (eg cloud computing). Have a good understanding of where technology is at and being 
-                aware of how particular business needs could be met by fit-for-purpose technological solutions.
-            </p>
+                    <h3>Have a good work ethic</h3>
+                    <p><img src="./images/meeting3.png"></p>
+                    <p>
+                        The ability to work well in a team, as well as work well individually. This may seem easy.. but it can be challenging - especially working in a
+                        team made up of people from different technical backgrounds. I think that for a team to function properly, the roles and responsibilities of
+                        the team members need to be clearly defined. A healthy atmosphere needs to be created where productive discussions about different ideas are
+                        encouraged and an atmosphere where people move away from autonomous to consensual decisions. Working individually has its own challenges - you
+                        have to have a broader skill set, to name one.
+                    </p>
 
-            <p>
-                Most of the above points are not necessarily specific to software development - they can be taken out of the software development context and 
-                be applied to most industries. Any comments, thoughts, discussion are most welcome.
-            </p>
-           
-            <p><a href="index.html">Back to Home</a></p>
+                    <h3>Support standards and processes</h3>
+                    <p>
+                        The ability to contribute to, adhere to, and support processes/standards, and question them when needed. Processes and standards are put in place
+                        to make our lives easier. When a process/standard hinders software development rather than aid it, it needs to be questioned/improved/rectified.
+                    </p>
+
+                    <h3>Be passionate</h3>
+                    <p>
+                        Finally, a good software developer has a passion for the IT industry. It is quite essential for the software developer to be actively involved
+                        in new technologies, take an interest in current trends (eg cloud computing). Have a good understanding of where technology is at and being
+                        aware of how particular business needs could be met by fit-for-purpose technological solutions.
+                    </p>
+
+                    <p>
+                        Most of the above points are not necessarily specific to software development - they can be taken out of the software development context and
+                        be applied to most industries. Any comments, thoughts, discussion are most welcome.
+                    </p>
+
+                    <p><a href="index.html">Back to Home</a></p>
+                </div>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="./images/profile.png" alt="Profile">
+                    </div>
+                    <div class="profile-info">
+                        <h1>Sameer Mitra</h1>
+                        <h3>Software Developer at Company</h3>
+                        <p>I am a full stack Applications Developer, specialising in Microsoft technologies. <a href="about.html">Read More..</a></p>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-
         <footer class="footer">
             <p>Sameer Mitra, Copyright &copy; 2021</p>
-            <div>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-            </div>
         </footer>
     </div>
 </body>

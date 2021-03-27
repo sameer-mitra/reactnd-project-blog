@@ -13,11 +13,28 @@
 </head>
 <body>
     <div class="grid-container">
+
         <header class="header">
-            <div id="branding">
-                <h1><span class="highlight">Random Musings</span> of a Software Developer</h1>
+            <div class="flex-container-header">
+                <div class="branding">
+                    <h1><span class="highlight">Random Musings</span> of a Software Developer</h1>
+                </div>
+                <div class="subscribe">
+                    <form action="#">
+                        <input class="subscribe-input" 
+                               id="txt-email"
+                               name="email"
+                               placeholder="Enter your email address"
+                               required=""
+                               title="Enter your email address to subscribe"
+                               type="email">
+                        <button class="subscribe-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
             </div>
-        </header>
+        </header>   
 
         <div class="banner">
             <div>
@@ -26,16 +43,20 @@
             </div>
         </div>
 
-        <nav class="nav">
+        <nav class="nav">            
             <ul>
                 <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="https://www.sameermitra.com">OLD Blog</a></li>                
+                <li><a href="https://www.sameermitra.com">OLD Blog</a></li>
+                <li><a href="#">Search</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
 
         <div class="content">
-            <img src="./images/post4.png">
+            <figure>
+                <img src="./images/post4.png" alt="Post4">
+                <figcaption>Rapid Development Book Cover</figcaption>
+            </figure>            
             <h2>Rapid Development</h2>
             <h3>Book Review</h3>
             <p>
@@ -77,12 +98,9 @@
         </div>
 
         <footer class="footer">
-            <p>Sameer Mitra, Copyright &copy; 2021</p>
-            <div>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-            </div>
+            <p>
+                Sameer Mitra, Copyright &copy; 2021
+            </p>            
         </footer>
     </div>
 </body>

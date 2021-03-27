@@ -2,7 +2,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 103px 300px 60px auto auto 150px;
+    grid-template-rows: auto 300px 60px auto auto 100px;
     grid-template-areas:
         "header"
         "banner"
@@ -14,7 +14,7 @@
 .grid-container-post {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 103px 300px 60px auto 150px;
+    grid-template-rows: auto 300px 60px auto 100px;
     grid-template-areas:
         "header"
         "banner"
@@ -23,19 +23,12 @@
         "footer";
 }
 
-/* FLEX Container only used in About page. */
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-}
-
 /* If Screen Is Wide Enough */
 @media(min-width:750px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 103px 300px 60px auto 150px;
+        grid-template-rows: auto 300px 60px auto 100px;
         grid-template-areas:
             "header header"
             "banner banner"
@@ -50,6 +43,27 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+}
+
+/* FLEX Container used in About page. */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+/* FLEX Container used in Posts. */
+.flex-container-post {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+/* FLEX Container used in Header */
+.flex-container-header {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
 }
 
 /* HEADER */
@@ -69,12 +83,30 @@
     padding: 0 20px 0 20px;
 }
 
-.header #branding {
-    float: left;
+.branding {
+    order: 1;
+    flex-grow: 4;
 }
 
-.header #branding h1 {
+.branding h1 {
     margin: 0;
+}
+
+.subscribe {
+    order: 2;
+    margin-top: 5px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+
+.subscribe-input {
+    padding: 10px;
+}
+
+.subscribe-btn {
+    padding: 10px;
+    background-color: var(--color-highlight);
+    color: var(--color-forecolor);
 }
 
 /* BANNER */
@@ -212,10 +244,66 @@
     margin: 20px 10px 0px 10px;
 }
 
-.content img {
-    width: 350px;    
+.content-blog {
+    grid-area: post;
+}
+
+.blog {
+    order: 1;
+    flex: 2;
+    padding: 20px 20px 20px 20px;
+    background-color: var(--color-forecolor);
+    border: 1px solid var(--color-border);
+    margin: 20px 10px 0px 10px;
+}
+
+.blog img {
+    max-width: 350px;    
     background-position: center center;
 }
+
+.blog figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px; /* adjust as needed */
+}
+
+.blog figure img {
+    vertical-align: top;
+}
+
+.blog figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+
+.profile {
+    order: 2;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 500px;
+    padding: 20px 20px 20px 20px;
+    background-color: var(--color-forecolor);
+    border: 1px solid var(--color-border);
+    margin: 20px 10px 0px 10px;
+}
+
+.profile-img {
+    order: 1;
+    flex: 1;
+    vertical-align: top;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    margin-left: 5px;
+    order: 2;
+    flex: 1;
+    min-width: 200px;
+}
+
 
 /* ABOUT */
 .about {    
